@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev — Jonatan Berntsen</title>
+  <meta name="description" content="Prosjekter og ting Jonatan har bygget." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+
+<div class="page-wrap">
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">jb://</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="dev.html">Dev</a></li>
+      <li><a href="klatring.html">Klatring</a></li>
+      <li><a href="musikk.html">Musikk</a></li>
+      <li><a href="om-meg.html">Om meg</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <p class="page-hero-label">// prosjekter</p>
+    <h1 class="page-hero-title">Dev</h1>
+    <p class="page-hero-sub">
+      Ting jeg har bygget — fra webapper og TUI-dashbord til WoW-tillegg og iOS-apper.
+      Alt startet som et problem jeg ville løse.
+    </p>
+  </div>
+
+  <section>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">outland_sjekker</span>
+          <a class="project-link" href="https://github.com/kanadurr/outland_sjekker" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+        <p class="project-desc">
+          Flask-webapp som henter ønskelisten din fra Moxfield og sjekker om kortene er på lager hos Outland.
+          Resultatene streames til nettleseren etter hvert som de ankommer — ingen venting på full sideoppdatering.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">BeautifulSoup4</span>
+          <span class="tech-tag">SSE</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">klasseliste</span>
+          <a class="project-link" href="https://github.com/kanadurr/klasseliste" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+        <p class="project-desc">
+          Terminal-UI (TUI) dashboard for klasseromsstyring bygget med Textual.
+          Gir rask oversikt over elever og klassestatus direkte i terminalen.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Textual</span>
+          <span class="tech-tag">TUI</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">orkk_instagram_bot</span>
+          <a class="project-link" href="https://github.com/kanadurr/orkk_instagram_bot" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+        <p class="project-desc">
+          Automatisert bot for ORKK klatreklubb. Skraper orkk.no, genererer bildetekster med Claude AI,
+          og poster til Instagram/Facebook etter manuell godkjenning.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Claude API</span>
+          <span class="tech-tag">Instagram API</span>
+          <span class="tech-tag">BeautifulSoup4</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">spotify-dedup</span>
+          <a class="project-link" href="https://github.com/kanadurr/spotify-dedup" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+        <p class="project-desc">
+          Python CLI-verktøy som kobler til Spotify-kontoen din og finner duplikate sanger i «Likte sanger».
+          Rydder opp i biblioteket uten å miste noe du faktisk vil beholde.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Spotify API</span>
+          <span class="tech-tag">CLI</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">UlRemedy</span>
+          <a class="project-link" href="https://github.com/kanadurr/UlRemedy" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+        <p class="project-desc">
+          World of Warcraft-tillegg skrevet i Lua. Håndterer auto-reparasjon, keystone-lenking,
+          søppelsalg og bankinnskudd — alt det kjedelige, automatisk.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Lua</span>
+          <span class="tech-tag">WoW API</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">PythonQuiz</span>
+          <a class="project-link" href="https://github.com/kanadurr/PythonQuiz" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+        <p class="project-desc">
+          iPhone-app bygget i SwiftUI for å øve på Python-konsepter fra Boot.dev-kurset.
+          Rundt 130 spørsmål med flashcard-format og fremdriftssporing.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Swift</span>
+          <span class="tech-tag">SwiftUI</span>
+          <span class="tech-tag">iOS</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Jonatan Berntsen &nbsp;·&nbsp; <a href="index.html#kontakt">Si hei</a></p>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
