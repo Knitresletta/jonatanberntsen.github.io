@@ -50,7 +50,7 @@
   const el = document.getElementById('typed-roles');
   if (!el) return;
 
-  const roles = ['Lærer', 'Klatreklubb-leder', 'Utvikler', 'Musikant'];
+  const roles = ['Kursleder', 'Styremedlem', 'Utvikler', 'Musikant'];
   let ri = 0, ci = 0, deleting = false;
 
   const cursor = document.createElement('span');
