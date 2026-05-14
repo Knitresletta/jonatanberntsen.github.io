@@ -37,78 +37,16 @@
   </div>
 
   <section>
+
+    <p class="section-label">// publisert</p>
+    <h2 class="section-title">På GitHub</h2>
+
     <div class="project-grid">
 
       <div class="project-card">
         <div class="project-card-header">
-          <span class="project-name">outland_sjekker</span>
-          <a class="project-link" href="https://github.com/kanadurr/outland_sjekker" target="_blank" rel="noopener">↗ GitHub</a>
-        </div>
-        <p class="project-desc">
-          Flask-webapp som henter ønskelisten din fra Moxfield og sjekker om kortene er på lager hos Outland.
-          Resultatene streames til nettleseren etter hvert som de ankommer — ingen venting på full sideoppdatering.
-        </p>
-        <div class="tech-tags">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Flask</span>
-          <span class="tech-tag">BeautifulSoup4</span>
-          <span class="tech-tag">SSE</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-card-header">
-          <span class="project-name">klasseliste</span>
-          <a class="project-link" href="https://github.com/kanadurr/klasseliste" target="_blank" rel="noopener">↗ GitHub</a>
-        </div>
-        <p class="project-desc">
-          Terminal-UI (TUI) dashboard for klasseromsstyring bygget med Textual.
-          Gir rask oversikt over elever og klassestatus direkte i terminalen.
-        </p>
-        <div class="tech-tags">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Textual</span>
-          <span class="tech-tag">TUI</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-card-header">
-          <span class="project-name">orkk_instagram_bot</span>
-          <a class="project-link" href="https://github.com/kanadurr/orkk_instagram_bot" target="_blank" rel="noopener">↗ GitHub</a>
-        </div>
-        <p class="project-desc">
-          Automatisert bot for ORKK klatreklubb. Skraper orkk.no, genererer bildetekster med Claude AI,
-          og poster til Instagram/Facebook etter manuell godkjenning.
-        </p>
-        <div class="tech-tags">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Claude API</span>
-          <span class="tech-tag">Instagram API</span>
-          <span class="tech-tag">BeautifulSoup4</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-card-header">
-          <span class="project-name">spotify-dedup</span>
-          <a class="project-link" href="https://github.com/kanadurr/spotify-dedup" target="_blank" rel="noopener">↗ GitHub</a>
-        </div>
-        <p class="project-desc">
-          Python CLI-verktøy som kobler til Spotify-kontoen din og finner duplikate sanger i «Likte sanger».
-          Rydder opp i biblioteket uten å miste noe du faktisk vil beholde.
-        </p>
-        <div class="tech-tags">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Spotify API</span>
-          <span class="tech-tag">CLI</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-card-header">
           <span class="project-name">UlRemedy</span>
-          <a class="project-link" href="https://github.com/kanadurr/UlRemedy" target="_blank" rel="noopener">↗ GitHub</a>
+          <a class="project-link" href="https://github.com/Knitresletta/UlRemedy" target="_blank" rel="noopener">↗ GitHub</a>
         </div>
         <p class="project-desc">
           World of Warcraft-tillegg skrevet i Lua. Håndterer auto-reparasjon, keystone-lenking,
@@ -122,21 +60,46 @@
 
       <div class="project-card">
         <div class="project-card-header">
-          <span class="project-name">PythonQuiz</span>
-          <a class="project-link" href="https://github.com/kanadurr/PythonQuiz" target="_blank" rel="noopener">↗ GitHub</a>
+          <span class="project-name">klasserom-dashboard</span>
+          <a class="project-link" href="https://github.com/Knitresletta/klasserom-dashboard" target="_blank" rel="noopener">↗ GitHub</a>
         </div>
         <p class="project-desc">
-          iPhone-app bygget i SwiftUI for å øve på Python-konsepter fra Boot.dev-kurset.
-          Rundt 130 spørsmål med flashcard-format og fremdriftssporing.
+          Vanilla HTML/CSS/JS klasseromsdashboard — navnetrekning, tilstedeværelse, nedtelling og dagsplan.
+          Kjører i nettleseren, lagrer tilstand i localStorage.
         </p>
         <div class="tech-tags">
-          <span class="tech-tag">Swift</span>
-          <span class="tech-tag">SwiftUI</span>
-          <span class="tech-tag">iOS</span>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">localStorage</span>
         </div>
       </div>
 
     </div>
+
+    <p class="section-label" style="margin-top:3rem;">// lokalt</p>
+    <h2 class="section-title">På maskinen</h2>
+    <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1rem;">
+      Småting jeg jobber med lokalt — ikke pushet (enda).
+    </p>
+
+    <div class="local-projects">
+      <p class="local-projects-prompt">$ ls ~/prosjekter</p>
+
+      <div class="local-project">
+        <span class="local-project-name">outland_sjekker/</span>
+        <span class="local-project-desc">Flask-app — sjekker Outland-lager mot Moxfield-ønskelisten</span>
+      </div>
+      <div class="local-project">
+        <span class="local-project-name">spotify-dedup/</span>
+        <span class="local-project-desc">Python CLI som rydder duplikater i Spotify-biblioteket</span>
+      </div>
+      <div class="local-project">
+        <span class="local-project-name">PythonQuiz/</span>
+        <span class="local-project-desc">SwiftUI iPhone-app for Boot.dev Python-flashcards</span>
+      </div>
+    </div>
+
   </section>
 
   <footer class="site-footer">

@@ -237,9 +237,17 @@ section {
 }
 
 .nav-card-icon {
-  font-size: 2rem;
+  width: 32px;
+  height: 32px;
   margin-bottom: 1rem;
   display: block;
+  color: var(--accent);
+  transition: color var(--transition), transform var(--transition);
+}
+
+.nav-card:hover .nav-card-icon {
+  color: var(--accent-cyan);
+  transform: translateY(-2px);
 }
 
 .nav-card-title {
@@ -337,6 +345,44 @@ section {
   background: rgba(124, 131, 253, 0.1);
   color: var(--accent);
   border: 1px solid rgba(124, 131, 253, 0.2);
+}
+
+/* ===== LOCAL PROJECTS (terminal list) ===== */
+.local-projects {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  font-family: var(--font-mono);
+}
+
+.local-projects-prompt {
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+.local-project {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.25rem;
+  padding: 0.55rem 0;
+  font-size: 0.875rem;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.06);
+}
+
+.local-project:last-child {
+  border-bottom: none;
+}
+
+.local-project-name {
+  color: var(--accent-cyan);
+}
+
+.local-project-desc {
+  color: var(--text-muted);
+  font-family: var(--font-sans);
 }
 
 /* ===== CONTACT FORM ===== */
@@ -693,6 +739,10 @@ section {
   }
   .project-grid {
     grid-template-columns: 1fr;
+  }
+  .local-project {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
   }
   .btn-send {
     align-self: stretch;
