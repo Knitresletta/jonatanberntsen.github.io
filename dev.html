@@ -7,12 +7,16 @@
   <meta name="description" content="Prosjekter og ting Jonatan har bygget." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+<div class="cosmos-bg" aria-hidden="true"></div>
+<div class="nebula" aria-hidden="true"></div>
 <canvas id="starfield"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
 
 <div class="page-wrap">
 
@@ -27,19 +31,28 @@
     </ul>
   </nav>
 
-  <div class="page-hero">
-    <p class="page-hero-label">// prosjekter</p>
-    <h1 class="page-hero-title">Dev</h1>
-    <p class="page-hero-sub">
-      Ting jeg har bygget — fra webapper og TUI-dashbord til WoW-tillegg og iOS-apper.
-      Alt startet som et problem jeg ville løse.
-    </p>
-  </div>
+  <main>
 
-  <section>
+  <!-- HERO -->
+  <section class="hero-grid">
+    <div>
+      <p class="page-hero-label" style="color:var(--pink);">// prosjekter</p>
+      <h1 class="page-hero-title">Dev</h1>
+      <p class="hero-grid-text">
+        Ting jeg har bygget — fra webapper og TUI-dashbord til WoW-tillegg og iOS-apper.
+        Alt startet som et problem jeg ville løse.
+      </p>
+    </div>
+    <div class="hero-media pink">
+      <img src="assets/images/withflowpass.jpg" alt="øther/dev/null — koding ved natt" />
+      <div class="hero-media-caption">while True: drift // 02:47</div>
+    </div>
+  </section>
 
-    <p class="section-label">// publisert</p>
-    <h2 class="section-title">På GitHub</h2>
+  <section class="section-wide" style="padding-top:40px;padding-bottom:110px;">
+
+    <p class="section-label pink">// publisert</p>
+    <h2 class="section-title" style="margin-bottom:28px;">På GitHub</h2>
 
     <div class="project-grid">
 
@@ -75,20 +88,49 @@
         </div>
       </div>
 
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">sjaforkalkulator</span>
+          <a class="project-link" href="https://github.com/Knitresletta/sjaforkalkulator" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+        <p class="project-desc">
+          Mobil-først kalkulator for kjørekostnader — drivstoff og slitasje, med tur/retur og spleis.
+          Bygget som PWA, kjører rett i nettleseren.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PWA</span>
+          <span class="tech-tag">HTML / CSS</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">ateroids</span>
+          <a class="project-link" href="https://github.com/Knitresletta/ateroids" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+        <p class="project-desc">
+          Asteroids bygget i Pygame — objektorientert spill-loop med kollisjoner, asteroidefelt
+          og egen logger. Boot.dev-prosjekt.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Pygame</span>
+        </div>
+      </div>
+
     </div>
 
-    <p class="section-label" style="margin-top:3rem;">// lokalt</p>
-    <h2 class="section-title">På maskinen</h2>
-    <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1rem;">
-      Småting jeg jobber med lokalt — ikke pushet (enda).
-    </p>
+    <p class="section-label pink" style="margin-top:54px;">// lokalt</p>
+    <h2 class="section-title" style="margin-bottom:8px;">På maskinen</h2>
+    <p class="section-intro">Småting jeg jobber med lokalt — ikke pushet (enda).</p>
 
     <div class="local-projects">
       <p class="local-projects-prompt">$ ls ~/prosjekter</p>
 
       <div class="local-project">
-        <span class="local-project-name">outland_sjekker/</span>
-        <span class="local-project-desc">Flask-app — sjekker Outland-lager mot Moxfield-ønskelisten</span>
+        <span class="local-project-name">scryfallxoutland/</span>
+        <span class="local-project-desc">Scraper Outland-lager og matcher Magic-singles mot Scryfall (privat repo)</span>
       </div>
       <div class="local-project">
         <span class="local-project-name">spotify-dedup/</span>
@@ -102,8 +144,10 @@
 
   </section>
 
+  </main>
+
   <footer class="site-footer">
-    <p>© 2025 Jonatan Berntsen &nbsp;·&nbsp; <a href="index.html#kontakt">Si hei</a></p>
+    <p>© 2026 Jonatan Berntsen &nbsp;·&nbsp; bygget med HTML, CSS og litt kosmisk energi</p>
   </footer>
 
 </div>

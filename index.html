@@ -7,18 +7,22 @@
   <meta name="description" content="Kursleder, styremedlem i ORKK, utvikler og musikant fra Norge." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+<div class="cosmos-bg" aria-hidden="true"></div>
+<div class="nebula" aria-hidden="true"></div>
 <canvas id="starfield"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
 
 <div class="page-wrap">
 
   <!-- NAV -->
   <nav class="site-nav">
-    <span class="nav-logo">jb://</span>
+    <a class="nav-logo" href="index.html">jb://</a>
     <ul class="nav-links">
       <li><a href="index.html">Hjem</a></li>
       <li><a href="dev.html">Dev</a></li>
@@ -28,26 +32,29 @@
     </ul>
   </nav>
 
+  <main>
+
   <!-- HERO -->
   <section class="hero">
-    <p class="hero-eyebrow">Hei, verden —</p>
-    <h1 class="hero-name">Jonatan Berntsen</h1>
-    <p class="hero-roles"><span id="typed-roles"></span></p>
+    <p class="hero-eyebrow">// initialiserer_kosmos…</p>
+    <h1 class="hero-name">Jonatan<br />Berntsen</h1>
+    <p class="hero-roles">&gt; jeg er en <span class="typed" id="typed-roles"></span><span class="typed-cursor">▌</span></p>
     <p class="hero-tagline">Bygger ting som hjelper folk, klatrer opp vegger, og spiller akkorder mellom to commits.</p>
-    <div class="scroll-hint" data-scroll="#seksjoner">
-      <span>Utforsk</span>
-      <div class="scroll-arrow"></div>
+    <div class="hero-cta">
+      <a class="btn-primary" href="dev.html">Utforsk arbeidet →</a>
+      <a class="btn-ghost" href="om-meg.html">Om meg</a>
     </div>
+    <div class="scroll-hint"><span class="arrow">↓</span> scroll for å utforske</div>
   </section>
 
   <!-- NAV CARDS -->
-  <section id="seksjoner">
-    <p class="section-label">// hva vil du se?</p>
+  <section class="section-wide" id="seksjoner" style="padding-top:30px;padding-bottom:100px;">
+    <p class="section-label cyan">// hva vil du se?</p>
     <h2 class="section-title">Utforsk</h2>
     <div class="nav-cards">
 
-      <a class="nav-card" href="dev.html">
-        <svg class="nav-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <a class="nav-card pink" href="dev.html">
+        <svg class="nav-card-icon" viewBox="0 0 24 24" aria-hidden="true">
           <polyline points="8 7 3 12 8 17"></polyline>
           <polyline points="16 7 21 12 16 17"></polyline>
           <line x1="14" y1="5" x2="10" y2="19"></line>
@@ -57,8 +64,8 @@
         <span class="nav-card-arrow">Se prosjekter →</span>
       </a>
 
-      <a class="nav-card" href="klatring.html">
-        <svg class="nav-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <a class="nav-card purple" href="klatring.html">
+        <svg class="nav-card-icon" viewBox="0 0 24 24" aria-hidden="true">
           <polyline points="3 19 9 9 13 14 16 11 21 19"></polyline>
           <circle cx="16" cy="6" r="1.2"></circle>
         </svg>
@@ -67,8 +74,8 @@
         <span class="nav-card-arrow">Les mer →</span>
       </a>
 
-      <a class="nav-card" href="musikk.html">
-        <svg class="nav-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <a class="nav-card magenta" href="musikk.html">
+        <svg class="nav-card-icon" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M3 12 Q 6 5, 9 12 T 15 12 T 21 12"></path>
         </svg>
         <div class="nav-card-title">Musikk</div>
@@ -76,10 +83,10 @@
         <span class="nav-card-arrow">Les mer →</span>
       </a>
 
-      <a class="nav-card" href="om-meg.html">
-        <svg class="nav-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <a class="nav-card cyan" href="om-meg.html">
+        <svg class="nav-card-icon" viewBox="0 0 24 24" aria-hidden="true">
           <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-20 12 12)"></ellipse>
-          <circle cx="12" cy="12" r="1.5" fill="currentColor"></circle>
+          <circle cx="12" cy="12" r="1.5" fill="#8fd0ff"></circle>
         </svg>
         <div class="nav-card-title">Om meg</div>
         <div class="nav-card-desc">Frivillig kursleder, styremedlem og nybakt backend-utvikler på vei mot noe nytt.</div>
@@ -89,41 +96,11 @@
     </div>
   </section>
 
-  <div class="divider" style="max-width:1100px;margin:0 auto;"></div>
-
-  <!-- CONTACT -->
-  <section id="kontakt" style="max-width:640px;">
-    <p class="section-label">// ta kontakt</p>
-    <h2 class="section-title">Si hei</h2>
-    <p style="color:var(--text-muted);margin-bottom:2rem;">
-      Har du et prosjekt, spørsmål eller bare lyst til å slå av en prat?
-      Fyll inn skjemaet — jeg svarer så fort jeg kan.
-    </p>
-
-    <!-- Bytt ut YOUR_FORM_ID med din Formspree-ID etter registrering på formspree.io -->
-    <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <div class="form-group">
-        <label for="name">Navn</label>
-        <input type="text" id="name" name="name" required placeholder="Ola Nordmann" />
-      </div>
-      <div class="form-group">
-        <label for="email">E-post</label>
-        <input type="email" id="email" name="email" required placeholder="ola@eksempel.no" />
-      </div>
-      <div class="form-group">
-        <label for="message">Melding</label>
-        <textarea id="message" name="message" required placeholder="Hei, jeg vil..."></textarea>
-      </div>
-      <button type="submit" class="btn-send">Send melding</button>
-    </form>
-    <div id="form-success" class="form-success">
-      ✓ Melding sendt! Jeg svarer så snart jeg kan.
-    </div>
-  </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <p>© 2025 Jonatan Berntsen &nbsp;·&nbsp; Bygget med HTML, CSS og litt kosmisk energi</p>
+    <p>© 2026 Jonatan Berntsen &nbsp;·&nbsp; bygget med HTML, CSS og litt kosmisk energi</p>
   </footer>
 
 </div>

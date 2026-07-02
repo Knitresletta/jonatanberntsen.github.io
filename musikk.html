@@ -7,12 +7,16 @@
   <meta name="description" content="Jonatan Berntsen og musikk — øther/dev/null og musikkarriere." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+<div class="cosmos-bg" aria-hidden="true"></div>
+<div class="nebula" aria-hidden="true"></div>
 <canvas id="starfield"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
 
 <div class="page-wrap">
 
@@ -27,199 +31,150 @@
     </ul>
   </nav>
 
-  <div class="page-hero">
-    <p class="page-hero-label">// musikk</p>
+  <main>
+
+  <section class="page-hero" style="max-width:1180px;padding-top:130px;">
+    <p class="page-hero-label" style="color:var(--magenta);">// musikk</p>
     <h1 class="page-hero-title">Musikk</h1>
-    <p class="page-hero-sub">
-      Lyd som ikke vil gi seg — mellom rommet og tastaturet.
+    <p class="page-hero-sub">Lyd som ikke vil gi seg — mellom rommet og tastaturet.</p>
+  </section>
+
+  <!-- ===== ØTHER/DEV/NULL ===== -->
+  <section class="section-wide" style="padding-top:36px;">
+    <p class="section-label magenta" style="margin-bottom:18px;">// prosjekt</p>
+
+    <div class="oether-banner">
+      <img src="assets/images/other-banner.jpg" alt="øther/dev/null banner" />
+      <div class="oether-banner-caption">
+        <div class="oether-banner-label">// AI-persona-prosjekt</div>
+        <div class="oether-banner-title">øther/dev/null</div>
+      </div>
+    </div>
+
+    <div class="genre-tags">
+      <span class="genre-tag">Chillstep</span>
+      <span class="genre-tag">Lo-fi</span>
+      <span class="genre-tag">Ambient Electronic</span>
+    </div>
+
+    <div class="oether-text content-block">
+      <p>
+        <strong style="color:var(--text);">øther/dev/null</strong> er et AI-persona-prosjekt.
+        Musikken lages i Suno, covers genereres via OpenAIs Image API. Det er ikke en artist —
+        det er en prosess med en estetikk.
+      </p>
+      <p>
+        Den egentlige jobben ligger ikke i å trykke "generer". Jeg har skrevet en intern bibel —
+        et regelsett for sjanger, palett, tittel-konvensjon og visuell grammatikk — som AI-en må
+        forholde seg til hver gang noe nytt skal lages. Det er det som gjør at sporene henger
+        sammen som <em>ett</em> prosjekt. AI som instrument; bibelen er partituret.
+      </p>
+      <p style="margin-bottom:1.2rem;">
+        For å unngå at alt låter likt, veksler jeg bevisst mellom tre moduser — omtrent som en
+        artist har ulike humør:
+      </p>
+    </div>
+
+    <div class="mode-cards">
+      <div class="mode-card cyan">
+        <div class="mode-card-title">drift</div>
+        <p>kosmisk, vektløs, melankolsk i moll. Følelsen av å drive alene gjennom noe vakkert og uendelig.</p>
+      </div>
+      <div class="mode-card pink">
+        <div class="mode-card-title">grind</div>
+        <p>mekanisk bas, skarpe arpeggio-synther som tastaturklikk, kald fluorescent-atmosfære. Tunnel vision klokken 02:47.</p>
+      </div>
+      <div class="mode-card purple">
+        <div class="mode-card-title">hybrid</div>
+        <p>drift som blir avbrutt av en emosjonell spike, for eksempel <code style="color:#c4b8ff;font-family:var(--font-mono);">new_message(from=you)</code>.</p>
+      </div>
+    </div>
+
+    <p class="title-note">
+      Titlene følger kode-syntax og leses som system-events fra en log-fil kl 03:00:
+      <code style="color:var(--cyan);font-family:var(--font-mono);">ping localhost</code>,
+      <code style="color:var(--cyan);font-family:var(--font-mono);">sidechain: breathe</code>,
+      <code style="color:var(--cyan);font-family:var(--font-mono);">while calm: glow</code>.
     </p>
-  </div>
 
-  <section>
+    <a class="btn-spotify" href="https://open.spotify.com/artist/5L44B7qCckqVgEw52iU5W1" target="_blank" rel="noopener">♫ Lytt på Spotify</a>
 
-    <!-- ===== ØTHER/DEV/NULL ===== -->
-    <p class="section-label">// prosjekt</p>
-    <h2 class="section-title">øther/dev/null</h2>
+    <div class="track-grid">
 
-    <div class="oether-section">
-
-      <img
-        src="assets/images/other-banner.png"
-        alt="øther/dev/null banner"
-        class="oether-banner"
-      />
-
-      <div class="oether-meta">
-        <span class="oether-genre-tag">Chillstep</span>
-        <span class="oether-genre-tag">Lo-fi</span>
-        <span class="oether-genre-tag">Ambient Electronic</span>
-      </div>
-
-      <div class="content-block" style="max-width:100%;">
-        <p>
-          <strong style="color:var(--text);">øther/dev/null</strong> er et AI-persona-prosjekt.
-          Musikken lages i Suno, covers genereres via OpenAIs Image API. Det er ikke en artist —
-          det er en prosess med en estetikk.
-        </p>
-        <p>
-          Den egentlige jobben ligger ikke i å trykke "generer". Jeg har skrevet en intern bibel —
-          et regelsett for sjanger, palett, tittel-konvensjon og visuell grammatikk — som AI-en må
-          forholde seg til hver gang noe nytt skal lages. Det er det som gjør at sporene henger
-          sammen som <em>ett</em> prosjekt, og ikke føles som tilfeldige Suno-takes.
-          AI som instrument; bibelen er partituret.
-        </p>
-        <p>
-          For å unngå at alt låter likt, veksler jeg bevisst mellom tre moduser — omtrent som en
-          artist har ulike humør:
-        </p>
-        <ul style="list-style:none; padding-left:0; margin:0.5rem 0 1rem;">
-          <li style="margin-bottom:0.4rem;">
-            <em style="color:var(--accent-cyan);">drift</em> — kosmisk, vektløs, melankolsk i moll.
-            Følelsen av å drive alene gjennom noe vakkert og uendelig.
-          </li>
-          <li style="margin-bottom:0.4rem;">
-            <em style="color:#a8ff78;">grind</em> — mekanisk bas, skarpe arpeggio-synther som
-            tastaturklikk, kald fluorescent-atmosfære. Tunnel vision klokken 02:47.
-          </li>
-          <li>
-            <em style="color:#c8882a;">hybrid</em> — drift som blir avbrutt av en emosjonell spike,
-            for eksempel <code>new_message(from=you)</code>.
-          </li>
-        </ul>
-        <p>
-          Titlene følger kode-syntax og leses som system-events fra en log-fil kl 03:00:
-          <code>ping localhost</code>, <code>sidechain: breathe</code>, <code>while calm: glow</code>.
-        </p>
-      </div>
-
-      <a
-        class="btn-spotify"
-        href="https://open.spotify.com/artist/5L44B7qCckqVgEw52iU5W1"
-        target="_blank"
-        rel="noopener"
-      >
-        ♫ &nbsp;Lytt på Spotify
+      <a class="track-card" href="https://open.spotify.com/track/6wZilNeOWWHbNCPu5A5F3Q" target="_blank" rel="noopener">
+        <div class="track-card-media">
+          <img src="assets/images/ping.jpg" alt="ping localhost cover" />
+        </div>
+        <div class="track-card-info">
+          <div class="track-title">ping localhost</div>
+          <div class="track-meta"><span>drift</span><span>3:09</span></div>
+        </div>
       </a>
 
-      <div class="track-grid">
-
-        <div class="track-card">
-          <img
-            src="https://i.scdn.co/image/ab67616d00001e0299de73109f8b89bd9731950d"
-            alt="ping localhost cover"
-          />
-          <div class="track-card-info">
-            <div class="track-title">ping localhost</div>
-            <div class="track-duration">3:09</div>
-          </div>
-          <a
-            class="track-card-link"
-            href="https://open.spotify.com/track/6wZilNeOWWHbNCPu5A5F3Q"
-            target="_blank"
-            rel="noopener"
-            aria-label="Spill ping localhost på Spotify"
-          ></a>
+      <a class="track-card" href="https://open.spotify.com/track/3L7CmF0gLJxx9E5SMkKdLP" target="_blank" rel="noopener">
+        <div class="track-card-media">
+          <img src="assets/images/newmessage.jpg" alt="new_message(from=you) cover" />
         </div>
-
-        <div class="track-card">
-          <img
-            src="https://i.scdn.co/image/ab67616d00001e0221738dbb55ac5021133a2790"
-            alt="new_message(from=you) cover"
-          />
-          <div class="track-card-info">
-            <div class="track-title">new_message(from=you)</div>
-            <div class="track-duration">3:36</div>
-          </div>
-          <a
-            class="track-card-link"
-            href="https://open.spotify.com/track/3L7CmF0gLJxx9E5SMkKdLP"
-            target="_blank"
-            rel="noopener"
-            aria-label="Spill new_message(from=you) på Spotify"
-          ></a>
+        <div class="track-card-info">
+          <div class="track-title">new_message(from=you)</div>
+          <div class="track-meta"><span>hybrid</span><span>3:36</span></div>
         </div>
+      </a>
 
-        <div class="track-card">
-          <img
-            src="https://i.scdn.co/image/ab67616d00001e028b39e3c790e0d94d6c5e3c91"
-            alt="with flow:pass cover"
-          />
-          <div class="track-card-info">
-            <div class="track-title">with flow:pass</div>
-            <div class="track-duration">2:57</div>
-          </div>
-          <a
-            class="track-card-link"
-            href="https://open.spotify.com/track/2yoG7ZGORVzoN9hD9bO47X"
-            target="_blank"
-            rel="noopener"
-            aria-label="Spill with flow:pass på Spotify"
-          ></a>
+      <a class="track-card" href="https://open.spotify.com/track/2yoG7ZGORVzoN9hD9bO47X" target="_blank" rel="noopener">
+        <div class="track-card-media">
+          <img src="assets/images/withflowpass.jpg" alt="with flow:pass cover" />
         </div>
-
-        <div class="track-card">
-          <img
-            src="https://i.scdn.co/image/ab67616d00001e02e3010a2d4f92bc1c936c631a"
-            alt="float(∞) cover"
-          />
-          <div class="track-card-info">
-            <div class="track-title">float(∞)</div>
-            <div class="track-duration">3:24</div>
-          </div>
-          <a
-            class="track-card-link"
-            href="https://open.spotify.com/track/73RmPKnjFnKShjrmiSME3p"
-            target="_blank"
-            rel="noopener"
-            aria-label="Spill float(∞) på Spotify"
-          ></a>
+        <div class="track-card-info">
+          <div class="track-title">with flow:pass</div>
+          <div class="track-meta"><span>grind</span><span>2:57</span></div>
         </div>
+      </a>
 
-        <div class="track-card">
-          <img
-            src="https://i.scdn.co/image/ab67616d00001e0276db903f9436a32caf00edba"
-            alt="sidechain: breathe cover"
-          />
-          <div class="track-card-info">
-            <div class="track-title">sidechain: breathe</div>
-            <div class="track-duration">3:07</div>
-          </div>
-          <a
-            class="track-card-link"
-            href="https://open.spotify.com/track/1Ghs6lKgH3zgubs6ZFoHK9"
-            target="_blank"
-            rel="noopener"
-            aria-label="Spill sidechain: breathe på Spotify"
-          ></a>
+      <a class="track-card" href="https://open.spotify.com/track/73RmPKnjFnKShjrmiSME3p" target="_blank" rel="noopener">
+        <div class="track-card-media">
+          <img src="assets/images/float.jpg" alt="float(∞) cover" />
         </div>
+        <div class="track-card-info">
+          <div class="track-title">float(∞)</div>
+          <div class="track-meta"><span>drift</span><span>3:24</span></div>
+        </div>
+      </a>
 
-      </div><!-- /track-grid -->
+      <a class="track-card" href="https://open.spotify.com/track/1Ghs6lKgH3zgubs6ZFoHK9" target="_blank" rel="noopener">
+        <div class="track-card-media">
+          <img src="assets/images/sidechain-breathe.jpg" alt="sidechain: breathe cover" />
+        </div>
+        <div class="track-card-info">
+          <div class="track-title">sidechain: breathe</div>
+          <div class="track-meta"><span>grind</span><span>3:07</span></div>
+        </div>
+      </a>
 
-    </div><!-- /oether-section -->
+    </div>
+  </section>
 
-    <div class="divider"></div>
+  <!-- ===== MUSIKKARRIERE ===== -->
+  <section class="section-narrow content-block" style="padding-top:50px;padding-bottom:110px;">
+    <div class="divider-glow"></div>
+    <p class="section-label magenta">// live og akustisk</p>
+    <h2 class="section-title" style="margin-bottom:24px;">Musikkarriere</h2>
 
-    <!-- ===== MUSIKKARRIERE ===== -->
-    <p class="section-label" style="margin-top:3rem;">// live og akustisk</p>
-    <h2 class="section-title">Musikkarriere</h2>
+    <h3>Instrumenter</h3>
+    <div class="skill-list" style="margin-bottom:1.4rem;">
+      <span class="instrument-primary">Bass ★</span>
+      <span class="skill-badge">Gitar</span>
+      <span class="skill-badge">Piano</span>
+      <span class="skill-badge">Vokal</span>
+      <span class="skill-badge">Trommer</span>
+    </div>
+    <p style="margin-bottom:2rem;">
+      Bass er huset mitt — det er der jeg kjenner musikken best. Men jeg finner meg godt igjen på
+      de andre strengene og bak et piano når stemningen krever det.
+    </p>
 
-    <div class="content-block" style="max-width:100%;">
-
-      <h2>Instrumenter</h2>
-      <div class="skill-list" style="margin-bottom:1.5rem;">
-        <span class="instrument-primary">Bass ★</span>
-        <span class="skill-badge">Gitar</span>
-        <span class="skill-badge">Piano</span>
-        <span class="skill-badge">Vokal</span>
-        <span class="skill-badge">Trommer</span>
-      </div>
-      <p>
-        Bass er huset mitt — det er der jeg kjenner musikken best. Men jeg finner meg godt igjen på de
-        andre strengene og bak et piano når stemningen krever det.
-        <!-- Legg gjerne til mer om sjanger, band, erfaring eller hva musikken betyr for deg -->
-      </p>
-
-      <div class="foh-block">
+    <div class="stacked-cards magenta">
+      <div class="stacked-card">
         <h3>// Digital musikkproduksjon</h3>
         <p>
           Jeg har ganske mye erfaring med digital musikkproduksjon og bruker primært
@@ -227,29 +182,30 @@
           til lyddesign og miksing. Det er også verktøyet bak mye av det som skjer i øther/dev/null.
         </p>
         <p>
-          Produksjon i DAW har gitt meg en grundig forståelse for signalflyt, dynamikk og
-          hva som skiller en god miks fra en som bare er høy.
+          Produksjon i DAW har gitt meg en grundig forståelse for signalflyt, dynamikk og hva som
+          skiller en god miks fra en som bare er høy.
         </p>
       </div>
-
-      <div class="foh-block" style="margin-top:1rem;">
+      <div class="stacked-card">
         <h3>// Front of House</h3>
         <p>
           Jeg har solid erfaring som lydtekniker for mindre live-arrangementer med 50–200 tilskuere.
-          Det innebærer alt fra riggsetting og signalflyt til miksing under konsert og monitorjustering for utøverne.
+          Det innebærer alt fra riggsetting og signalflyt til miksing under konsert og
+          monitorjustering for utøverne.
         </p>
         <p>
-          Å jobbe Front of House har gitt meg en sterk forståelse for rom, dynamikk og hva som faktisk
-          høres bra ut i et levende publikum — ikke bare i hodetelefoner.
+          Å jobbe Front of House har gitt meg en sterk forståelse for rom, dynamikk og hva som
+          faktisk høres bra ut i et levende publikum — ikke bare i hodetelefoner.
         </p>
       </div>
-
     </div>
 
   </section>
 
+  </main>
+
   <footer class="site-footer">
-    <p>© 2025 Jonatan Berntsen &nbsp;·&nbsp; <a href="index.html#kontakt">Si hei</a></p>
+    <p>© 2026 Jonatan Berntsen &nbsp;·&nbsp; bygget med HTML, CSS og litt kosmisk energi</p>
   </footer>
 
 </div>
