@@ -1,0 +1,16 @@
+/design-sync
+
+---
+
+Jeg gjorde oppdateringer i claude design som jeg vil ha til live
+
+---
+
+Sånn
+
+---
+
+Use the claude_design MCP (https://api.anthropic.com/v1/design/mcp, auth via /design-login) to import this project:
+https://claude.ai/design/p/1f29fa17-8bb2-4995-96d7-642bcc565ca3?file=Kosmos+v2.dc.html
+
+Implement: Kosmos v2.dc.html

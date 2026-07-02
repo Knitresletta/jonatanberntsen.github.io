@@ -1,0 +1,81 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "bafdd72f8789",
+  "session_id": "37d5a5ef-5ff9-455c-9f53-78cc5621c77d",
+  "strategy": "manual-commit",
+  "created_at": "2026-07-02T00:52:20.547506Z",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "assets/images/cosmos-bg.jpg",
+    "assets/images/float.jpg",
+    "assets/images/newmessage.jpg",
+    "assets/images/other-banner.jpg",
+    "assets/images/ping.jpg",
+    "assets/images/sidechain-breathe.jpg",
+    "assets/images/withflowpass.jpg",
+    "css/style.css",
+    "dev.html",
+    "index.html",
+    "js/main.js",
+    "klatring.html",
+    "musikk.html",
+    "om-meg.html"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-4-8[1m]",
+  "turn_id": "47789a0e696b",
+  "token_usage": {
+    "input_tokens": 8701,
+    "cache_creation_tokens": 258978,
+    "cache_read_tokens": 6574825,
+    "output_tokens": 80867,
+    "api_call_count": 53
+  },
+  "session_metrics": {
+    "turn_count": 5
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-07-02T00:52:20.433291Z",
+    "agent_lines": 1216,
+    "agent_removed": 1000,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 1216,
+    "total_lines_changed": 2216,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 116,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".claude/agents/entire-search.md": 25,
+        ".claude/settings.json": 84,
+        ".claude/settings.local.json": 7
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 27,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1325,
+      "agent_lines_removed": 1000,
+      "user_added_per_file": {
+        ".claude/settings.local.json": 27
+      }
+    }
+  ]
+}

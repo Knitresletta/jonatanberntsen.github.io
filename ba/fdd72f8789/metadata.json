@@ -1,0 +1,38 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "bafdd72f8789",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "assets/images/cosmos-bg.jpg",
+    "assets/images/float.jpg",
+    "assets/images/newmessage.jpg",
+    "assets/images/other-banner.jpg",
+    "assets/images/ping.jpg",
+    "assets/images/sidechain-breathe.jpg",
+    "assets/images/withflowpass.jpg",
+    "css/style.css",
+    "dev.html",
+    "index.html",
+    "js/main.js",
+    "klatring.html",
+    "musikk.html",
+    "om-meg.html"
+  ],
+  "sessions": [
+    {
+      "metadata": "/ba/fdd72f8789/0/metadata.json",
+      "transcript": "/ba/fdd72f8789/0/full.jsonl",
+      "content_hash": "/ba/fdd72f8789/0/content_hash.txt",
+      "prompt": "/ba/fdd72f8789/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 8701,
+    "cache_creation_tokens": 258978,
+    "cache_read_tokens": 6574825,
+    "output_tokens": 80867,
+    "api_call_count": 53
+  }
+}
