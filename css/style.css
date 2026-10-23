@@ -624,6 +624,24 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
 }
 
+/* ===== DEV: UTVALGT ===== */
+.project-grid.featured {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-bottom: 72px;
+}
+
+.project-card.featured {
+  padding: 30px;
+  border-color: rgba(255, 138, 216, 0.42);
+  box-shadow:
+    0 0 0 1px rgba(255, 138, 216, 0.06),
+    0 18px 48px rgba(255, 138, 216, 0.08);
+}
+
+.project-card.featured .project-name {
+  font-size: 1.12rem;
+}
+
 /* ===== DEV: LOKALE PROSJEKTER ===== */
 .section-intro {
   color: var(--text-dim);
