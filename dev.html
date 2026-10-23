@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dev - Jonatan Berntsen</title>
-  <meta name="description" content="Prosjekter og ting Jonatan har bygget." />
+  <meta name="description" content="Prosjekter Jonatan Berntsen har bygget og publisert: WoW-tillegg, PWA-er og Python-verktøy." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -25,7 +25,6 @@
     <ul class="nav-links">
       <li><a href="index.html">Hjem</a></li>
       <li><a href="dev.html">Dev</a></li>
-      <li><a href="klatring.html">Klatring</a></li>
       <li><a href="musikk.html">Musikk</a></li>
       <li><a href="om-meg.html">Om meg</a></li>
     </ul>
@@ -39,8 +38,9 @@
       <p class="page-hero-label" style="color:var(--pink);">// prosjekter</p>
       <h1 class="page-hero-title">Dev</h1>
       <p class="hero-grid-text">
-        Ting jeg har bygget, fra webapper og TUI-dashbord til WoW-tillegg og spill i Python.
-        Alt startet som et problem jeg ville løse.
+        Ting jeg har bygget og sluppet: en familie av WoW-tillegg med brukere på CurseForge,
+        PWA-er som kjører uten server, og Python-verktøy for hverdagen. Alt startet som et
+        problem jeg ville løse, og det meste er fortsatt i bruk.
       </p>
     </div>
     <div class="hero-media pink">
@@ -52,9 +52,89 @@
   <section class="section-wide" style="padding-top:40px;padding-bottom:110px;">
 
     <p class="section-label pink">// publisert</p>
-    <h2 class="section-title" style="margin-bottom:28px;">På GitHub</h2>
+    <h2 class="section-title" style="margin-bottom:28px;">Produkter</h2>
 
     <div class="project-grid">
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">UlRemedyForever</span>
+          <span style="display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;">
+            <a class="project-link" href="https://www.curseforge.com/projects/1739996" target="_blank" rel="noopener">↗ CurseForge</a>
+            <a class="project-link" href="https://github.com/Knitresletta/UlRemedyForever" target="_blank" rel="noopener">↗ GitHub</a>
+          </span>
+        </div>
+        <p class="project-desc">
+          Quality-of-life-samling for World of Warcraft: Forever. Over femten små verktøy i ett tillegg,
+          fra auto-reparasjon og større vendorvindu til auksjonspriser i tooltips som deles mellom
+          brukere over en skjult chatkanal. README-en sier nøyaktig hva som forlater maskinen din.
+          Versjon 1.20, publisert på CurseForge.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Lua</span>
+          <span class="tech-tag">WoW API</span>
+          <span class="tech-tag">CurseForge</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">UlDungeonCompanion</span>
+          <span style="display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;">
+            <a class="project-link" href="https://www.curseforge.com/projects/1743328" target="_blank" rel="noopener">↗ CurseForge</a>
+            <a class="project-link" href="https://github.com/Knitresletta/UlDungeonCompanion" target="_blank" rel="noopener">↗ GitHub</a>
+          </span>
+        </div>
+        <p class="project-desc">
+          Finner dungeons, dungeon-quests og elite-quests som passer nivået ditt, og viser dem på
+          verdenskartet og i et eget vindu. Datagrunnlaget bygges med Python-verktøy fra
+          1.12-databasen og community-kilder, og sjekkes mot serveren i spillet.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Lua</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Datapipeline</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">UlSource</span>
+          <span style="display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;">
+            <a class="project-link" href="https://www.curseforge.com/projects/1745490" target="_blank" rel="noopener">↗ CurseForge</a>
+            <a class="project-link" href="https://github.com/Knitresletta/UlSource" target="_blank" rel="noopener">↗ GitHub</a>
+          </span>
+        </div>
+        <p class="project-desc">
+          Hvor kom dette fra? Registrerer hvert loot med kilde, sone og posisjon, og viser
+          dropprater og funnsteder i tooltip og på kartet. En database som vokser for hver gang du
+          looter, uten ferdigdata og uten nettverk.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Lua</span>
+          <span class="tech-tag">SavedVariables</span>
+          <span class="tech-tag">WoW API</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">Garderobe</span>
+          <span style="display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;">
+            <a class="project-link" href="https://knitresletta.github.io/outfit/" target="_blank" rel="noopener">↗ Prøv den</a>
+            <a class="project-link" href="https://github.com/Knitresletta/outfit" target="_blank" rel="noopener">↗ GitHub</a>
+          </span>
+        </div>
+        <p class="project-desc">
+          PWA for å fotografere plagg, sette dem sammen til looks og lagre alt lokalt på telefonen.
+          Ingen server, ingen konto. IndexedDB, service worker, bakgrunnsfjerning i canvas og
+          sikkerhetskopi som JSON.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PWA</span>
+          <span class="tech-tag">IndexedDB</span>
+        </div>
+      </div>
 
       <div class="project-card">
         <div class="project-card-header">
@@ -62,8 +142,26 @@
           <a class="project-link" href="https://github.com/Knitresletta/UlRemedy" target="_blank" rel="noopener">↗ GitHub</a>
         </div>
         <p class="project-desc">
-          World of Warcraft-tillegg skrevet i Lua. Håndterer auto-reparasjon, keystone-lenking,
+          Retail-utgaven og opphavet til Forever-familien. Auto-reparasjon, keystone-lenking,
           søppelsalg og bankinnskudd. Alt det kjedelige, automatisk.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Lua</span>
+          <span class="tech-tag">WoW API</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">KeyLink</span>
+          <span style="display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;">
+            <a class="project-link" href="https://github.com/Knitresletta/KeyLink" target="_blank" rel="noopener">↗ GitHub</a>
+          </span>
+        </div>
+        <p class="project-desc">
+          Ett Lua-skript, én jobb: når noen skriver <code style="font-family:var(--font-mono);">!keys</code> i
+          gruppe-, raid- eller instance-chat, finner tillegget Mythic Keystone-en din i veskene og
+          lenker den i samme kanal. Retail-tillegg på førti linjer.
         </p>
         <div class="tech-tags">
           <span class="tech-tag">Lua</span>
@@ -119,38 +217,76 @@
         </div>
       </div>
 
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">kodekurs</span>
+          <span style="display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;">
+            <a class="project-link" href="https://github.com/Knitresletta/kodekurs" target="_blank" rel="noopener">↗ GitHub</a>
+          </span>
+        </div>
+        <p class="project-desc">
+          Åpent kursmateriell for koding for barn og ungdom 10-16 år: tre språkspor (Python, Scratch og
+          Lua/Roblox), bygget som en stige av 45-minutters segmenter med oppgaver i tre nivåer og
+          byggeøkter uten fasit. Markdown i repo, så andre instruktører kan forke og tilpasse.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Markdown</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Scratch</span>
+          <span class="tech-tag">Lua / Roblox</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-name">knitresletta.dev</span>
+          <span style="display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;">
+            <a class="project-link" href="https://github.com/Knitresletta/jonatanberntsen.github.io" target="_blank" rel="noopener">↗ GitHub</a>
+          </span>
+        </div>
+        <p class="project-desc">
+          Denne siden. Ren HTML, CSS og JavaScript uten byggesteg, designet i Claude Design og oversatt
+          for hånd til fem statiske sider. Stjernehimmel på canvas, typewriter i hero, GitHub Pages med
+          eget domene.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">GitHub Pages</span>
+        </div>
+      </div>
+
     </div>
 
     <p class="section-label pink" style="margin-top:54px;">// læringsløp</p>
     <h2 class="section-title" style="margin-bottom:8px;">Boot.dev backend-løpet</h2>
-    <p class="section-intro">Strukturert løp mot backend-utvikling, med Python som hovedspråk. Status per juli 2026:</p>
-
-    <div class="local-projects">
-      <p class="local-projects-prompt">$ bootdev progress --user knitresletta</p>
-
-      <div class="local-project">
-        <span class="local-project-name">fullført/</span>
-        <span class="local-project-desc">Kurs i Python, Linux, Git og objektorientert programmering, pluss prosjektene Bookbot og Asteroids</span>
-      </div>
-      <div class="local-project">
-        <span class="local-project-name">stats/</span>
-        <span class="local-project-desc">426 løste oppgaver og en gullstreak på 21 dager i strekk</span>
-      </div>
-      <div class="local-project">
-        <span class="local-project-name">neste/</span>
-        <span class="local-project-desc">SQL, Docker og Kubernetes</span>
-      </div>
-    </div>
-
-    <p style="margin-top:14px;"><a class="inline-link" href="https://www.boot.dev/u/knitresletta" target="_blank" rel="noopener">↗ Hele profilen på boot.dev</a></p>
+    <p class="section-intro">
+      Python, Linux, Git og objektorientert programmering er fullført, med Bookbot og Asteroids som
+      prosjekter. Løpet står på pause mens jeg bygger produkter, og det er et bevisst valg: akkurat nå
+      lærer jeg mer av brukere som finner feil enn av oppgaver med fasit.
+      <a class="project-link" href="https://www.boot.dev/u/knitresletta" target="_blank" rel="noopener">↗ Profilen på boot.dev</a>
+    </p>
 
     <p class="section-label pink" style="margin-top:54px;">// lokalt</p>
     <h2 class="section-title" style="margin-bottom:8px;">På maskinen</h2>
-    <p class="section-intro">Småting jeg jobber med lokalt, ikke pushet (enda).</p>
+    <p class="section-intro">Verktøy jeg bruker selv, men som ikke er pakket for andre (enda).</p>
 
     <div class="local-projects">
       <p class="local-projects-prompt">$ ls ~/prosjekter</p>
 
+      <div class="local-project">
+        <span class="local-project-name">lkv-code/</span>
+        <span class="local-project-desc">Egen kodefont bygget med fontTools: Victor Mono i koden, min egen håndskrift i kommentarene</span>
+      </div>
+      <div class="local-project">
+        <span class="local-project-name">composio-agent/</span>
+        <span class="local-project-desc">Claude Agent SDK pluss Composio: en agent som får verktøy over MCP og løser oppgaver med dem</span>
+      </div>
+      <div class="local-project">
+        <span class="local-project-name">fpl/</span>
+        <span class="local-project-desc">Fantasy Premier League-analyse mot det offisielle API-et, ren stdlib</span>
+      </div>
       <div class="local-project">
         <span class="local-project-name">epost-pipeline/</span>
         <span class="local-project-desc">Python-pipeline som leser e-post over IMAP, parser HTML til strukturerte rapporter og kjører daglig via launchd</span>

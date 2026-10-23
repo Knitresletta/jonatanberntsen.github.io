@@ -136,12 +136,12 @@ const PARALLAX = false;
     if (!el) return;
 
     const roles = [
-        "kursleder.",
-        "styremedlem i ORKK.",
-        "backend-utvikler.",
-        "musikant.",
-        "klatrer.",
+        "utvikler.",
+        "musiker.",
+        "produsent.",
         "lydtekniker.",
+        "lærer.",
+        "klatreinstruktør.",
     ];
     let ri = 0, ci = 0, deleting = false;
 
