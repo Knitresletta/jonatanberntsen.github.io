@@ -1,0 +1,33 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "bd3b1a97f0fb",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 7,
+  "files_touched": [
+    "assets/images/heartbeat-dropped.jpg",
+    "assets/images/unwind.jpg",
+    "assets/images/while-calm-glow.jpg",
+    "dev.html",
+    "index.html",
+    "js/main.js",
+    "klatring.html",
+    "musikk.html",
+    "om-meg.html"
+  ],
+  "sessions": [
+    {
+      "metadata": "/bd/3b1a97f0fb/0/metadata.json",
+      "transcript": "/bd/3b1a97f0fb/0/full.jsonl",
+      "content_hash": "/bd/3b1a97f0fb/0/content_hash.txt",
+      "prompt": "/bd/3b1a97f0fb/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 824,
+    "cache_creation_tokens": 114227,
+    "cache_read_tokens": 4272514,
+    "output_tokens": 30436,
+    "api_call_count": 37
+  }
+}
