@@ -1,0 +1,36 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "efd6e5c7841a",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "css/style.css",
+    "dev.html",
+    "fonts/README.md",
+    "fonts/jetbrainsmono/OFL.txt",
+    "fonts/jetbrainsmono/jetbrainsmono-latin.woff2",
+    "fonts/manrope/OFL.txt",
+    "fonts/manrope/manrope-latin.woff2",
+    "fonts/spacegrotesk/OFL.txt",
+    "fonts/spacegrotesk/spacegrotesk-latin.woff2",
+    "index.html",
+    "musikk.html",
+    "om-meg.html"
+  ],
+  "sessions": [
+    {
+      "metadata": "/ef/d6e5c7841a/0/metadata.json",
+      "transcript": "/ef/d6e5c7841a/0/full.jsonl",
+      "content_hash": "/ef/d6e5c7841a/0/content_hash.txt",
+      "prompt": "/ef/d6e5c7841a/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 56,
+    "cache_creation_tokens": 21816,
+    "cache_read_tokens": 2101529,
+    "output_tokens": 12451,
+    "api_call_count": 23
+  }
+}
