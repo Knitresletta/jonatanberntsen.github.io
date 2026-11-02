@@ -1,0 +1,13 @@
+# Filer i repoet som ikke er en del av nettsiden.
+# Skråstrek foran betyr «bare i rotmappa».
+.git
+.DS_Store
+.assetsignore
+.gitignore
+.claude
+.codex
+.entire
+.wrangler
+/wrangler.jsonc
+/README.md
+/SIKKERHET.md

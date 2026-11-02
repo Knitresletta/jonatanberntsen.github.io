@@ -1,0 +1,9 @@
+# Lokale verktøymapper, skal aldri i repoet
+.claude/
+.codex/
+.entire/
+.wrangler/
+.DS_Store
+
+# Bruksanvisning for sikkerhet. Repoet er offentlig, og den beskriver hullene i detalj.
+/SIKKERHET.md

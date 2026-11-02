@@ -1,0 +1,16 @@
+// Oppsett for Cloudflare Workers (bare statiske filer, ingen serverkode).
+// Bygges automatisk ved push til main. Hva som holdes utenfor, står i .assetsignore.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Må hete det samme som Workeren i Cloudflare, ellers lages en ny Worker.
+  "name": "knitresletta-hjemmeside",
+  "compatibility_date": "2026-11-01",
+  "assets": { "directory": "." },
+  // Logger i Cloudflare-dashbordet. Var på i det autogenererte oppsettet.
+  "observability": { "enabled": true },
+  // Siden skal bare finnes på knitresletta.dev, ikke på workers.dev eller forhåndsvisninger.
+  "workers_dev": false,
+  "preview_urls": false,
+  // Domenet står her også, så en deploy aldri kobler det fra.
+  "routes": [{ "pattern": "knitresletta.dev", "custom_domain": true }]
+}
